@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #f6f5f7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: -20px 0 50px;
+    margin-top: 20px;
+}
+
+h1 {
+    font-weight: bold;
+    margin: 0;
+    position: absolute;
+    top: 5%;
+    bottom: ;
+    left: ;
+    right: 80%;
+    color: rgb(0, 0, 139);
+}
+
+.container {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, .2), 0 10px 10px rgba(0, 0, 0, .2);
+    position: relative;
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    min-height: 480px;
+}
+
+.form-container form {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.login-with-google-btn {
+    transition: background-color .3s, box-shadow .3s;
+    padding: 12px 16px 12px 42px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, .04), 0 1px 1px rgba(0, 0, 0, .25);
+    color: #757575;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNMTcuNiA5LjJsLS4xLTEuOEg5djMuNGg0LjhDMTMuNiAxMiAxMyAxMyAxMiAxMy42djIuMmgzYTguOCA4LjggMCAwIDAgMi42LTYuNnoiIGZpbGw9IiM0Mjg1RjQiIGZpbGwtcnVsZT0ibm9uemVybyIvPjxwYXRoIGQ9Ik05IDE4YzIuNCAwIDQuNS0uOCA2LTIuMmwtMy0yLjJhNS40IDUuNCAwIDAgMS04LTIuOUgxVjEzYTkgOSAwIDAgMCA4IDV6IiBmaWxsPSIjMzRBODUzIiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNNCAxMC43YTUuNCA1LjQgMCAwIDEgMC0zLjRWNUgxYTkgOSAwIDAgMCAwIDhsMy0yLjN6IiBmaWxsPSIjRkJCQzA1IiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNOSAzLjZjMS4zIDAgMi41LjQgMy40IDEuM0wxNSAyLjNBOSA5IDAgMCAwIDEgNWwzIDIuNGE1LjQgNS40IDAgMCAxIDUtMy43eiIgZmlsbD0iI0VBNDMzNSIgZmlsbC1ydWxlPSJub256ZXJvIi8+PHBhdGggZD0iTTAgMGgxOHYxOEgweiIvPjwvZz48L3N2Zz4=);
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: 12px 11px;
+    &:hover {
+        box-shadow: 0 -1px 0 rgba(0, 0, 0, .04), 0 2px 4px rgba(0, 0, 0, .25);
+    }
+    &:active {
+        background-color: #eeeeee;
+    }
+    &:focus {
+        outline: none;
+        box-shadow: 0 -1px 0 rgba(0, 0, 0, .04), 0 2px 4px rgba(0, 0, 0, .25), 0 0 0 3px #c8dafc;
+    }
+    &:disabled {
+        filter: grayscale(100%);
+        background-color: #ebebeb;
+        box-shadow: 0 -1px 0 rgba(0, 0, 0, .04), 0 1px 1px rgba(0, 0, 0, .25);
+        cursor: not-allowed;
+    }
+}
+
+.login-with-google-btn {
+    position: absolute;
+    top: 18%;
+    right: 75%;
+    font-size: 50%;
+}
+
+.login-with-google-btn1 {
+    transition: background-color .3s, box-shadow .3s;
+    padding: 12px 16px 12px 42px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, .04), 0 1px 1px rgba(0, 0, 0, .25);
+    color: #757575;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/14082/icon_facebook.png');
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: 12px 11px;
+    &:hover {
+        box-shadow: 0 -1px 0 rgba(0, 0, 0, .04), 0 2px 4px rgba(0, 0, 0, .25);
+    }
+    &:active {
+        background-color: #fd1717;
+    }
+    &:focus {
+        outline: none;
+        box-shadow: 0 -1px 0 rgba(0, 0, 0, .04), 0 2px 4px rgba(0, 0, 0, .25), 0 0 0 3px #c8dafc;
+    }
+    &:disabled {
+        filter: grayscale(100%);
+        background-color: #ebebeb;
+        box-shadow: 0 -1px 0 rgba(0, 0, 0, .04), 0 1px 1px rgba(0, 0, 0, .25);
+        cursor: not-allowed;
+    }
+}
+
+.login-with-google-btn1 {
+    position: absolute;
+    top: 18%;
+    right: 55%;
+    font-size: 50%;
+}
+
+.inp1 {
+    position: absolute;
+    top: 40%;
+    right: 69%;
+    padding: 5px 4px;
+    border-color: #000000;
+    border-radius: 6px;
+    background-color: #e0dcdc;
+    border: #e0dcdc;
+    height: 8%;
+}
+
+.inp2 {
+    position: absolute;
+    top: 40%;
+    right: 44%;
+    padding: 5px 4px;
+    border-radius: 6px;
+    background-color: #e0dcdc;
+    border: #e0dcdc;
+    height: 8%;
+}
+
+.inp3 {
+    position: absolute;
+    top: 55%;
+    left: 8%;
+    width: 370px;
+    padding: 5px 4px;
+    text-align: left;
+    border-color: #000000;
+    border-radius: 6px;
+    background-color: #e0dcdc;
+    border: #e0dcdc;
+    height: 8%;
+}
+
+.head1 {
+    position: absolute;
+    top: 30%;
+    left: 9%;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+
+.head2 {
+    position: absolute;
+    top: 30%;
+    left: 34%;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+
+.head3 {
+    position: absolute;
+    top: 46%;
+    left: 8%;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+
+.inp4 {
+    position: absolute;
+    bottom: 28%;
+    left: 8%;
+}
+
+.para1 {
+    position: absolute;
+    bottom: 26%;
+    left: 11%;
+    font-size: 13px;
+}
+
+.para2 {
+    position: absolute;
+    bottom: 23%;
+    left: 11%;
+    font-size: 13px;
+}
+
+.para3 {
+    position: absolute;
+    bottom: 3%;
+    left: 11%;
+    font-size: 13px;
+}
+
+.pure-material-button-text {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 4px;
+    padding: 0 8px;
+    min-width: 64px;
+    height: 36px;
+    vertical-align: middle;
+    text-align: center;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    color: rgb(var(--pure-material-primary-rgb, 33, 150, 243));
+    background-color: transparent;
+    font-family: var(--pure-material-font, "Roboto", "Segoe UI", BlinkMacSystemFont, system-ui, -apple-system);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 36px;
+    overflow: hidden;
+    outline: none;
+    cursor: pointer;
+}
+
+.pure-material-button-text::-moz-focus-inner {
+    border: none;
+}
+
+
+/* Overlay */
+
+.pure-material-button-text::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: currentColor;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+
+/* Ripple */
+
+.pure-material-button-text::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 50%;
+    padding: 50%;
+    width: 32px;
+    height: 32px;
+    background-color: currentColor;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1);
+    transition: opacity 1s, transform 0.5s;
+}
+
+
+/* Hover, Focus */
+
+.pure-material-button-text:hover::before {
+    opacity: 0.04;
+}
+
+.pure-material-button-text:focus::before {
+    opacity: 0.12;
+}
+
+.pure-material-button-text:hover:focus::before {
+    opacity: 0.16;
+}
+
+
+/* Active */
+
+.pure-material-button-text:active::after {
+    opacity: 0.16;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0s;
+}
+
+
+/* Disabled */
+
+.pure-material-button-text:disabled {
+    color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.38);
+    background-color: transparent;
+    cursor: initial;
+}
+
+.pure-material-button-text:disabled::before {
+    opacity: 0;
+}
+
+.pure-material-button-text:disabled::after {
+    opacity: 0;
+}
+
+.pure-material-button-text {
+    position: absolute;
+    bottom: 3.5%;
+    left: 32%;
+    font-size: 10px;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.arrow {
+    position: absolute;
+    bottom: 17%;
+    left: 12%;
+}
+
+.btn1 {
+    position: absolute;
+    bottom: 14%;
+    left: 9%;
+    padding: 1px 19px;
+    color: #ff8724;
+    background-color: #ff8724;
+    border: #ff8724;
+    border-radius: 6px;
+    cursor: auto;
+}
+
+.img1 {
+    width: 20%;
+    height: 60%;
+    position: absolute;
+    top: 35%;
+    right: 9%;
+}
